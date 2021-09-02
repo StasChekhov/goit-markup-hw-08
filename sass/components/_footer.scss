@@ -1,0 +1,136 @@
+.footer {
+  background: $brand-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container {
+  display: flex;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer-div {
+  &__link {
+    display: block;
+    font-family: Raleway;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: bold;
+    color: $accent;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  &__logo {
+    color: $white;
+  }
+}
+.address-list {
+  font-style: normal;
+  list-style: none;
+  padding: 0;
+
+  & :not(:last-child) {
+    padding-bottom: 9px;
+  }
+
+  &__link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    padding: 20px 0 9px 0;
+    letter-spacing: 0.03em;
+    color: $white;
+    text-decoration: none;
+    list-style: none;
+  }
+  &__contacts {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    list-style-type: none;
+  }
+}
+.join {
+  padding-top: 10px;
+  margin-left: 70px;
+
+  &__header {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 20px;
+  }
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: $accent;
+    }
+  }
+
+  &__icons {
+    display: block;
+    width: 20px;
+    height: 20px;
+    fill: white;
+  }
+
+  &__input {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    background-color: rgba(33, 150, 243, 0);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+    color: $white;
+  }
+
+  &__div {
+    width: 200px;
+    height: 100%;
+  }
+
+  &__button {
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin-top: 45px;
+    margin-left: 12px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+    color: $white;
+    background: $accent;
+    padding: 0 auto;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+}
