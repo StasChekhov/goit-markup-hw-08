@@ -1,41 +1,71 @@
 .hero-section {
-  max-width: 1600px;
-  margin: 0 auto;
-  background: $brand-color;
-  padding: 200px 0;
+  width: 480px;
+  height: 400px;
+  padding: 118px 60px;
   background-image: linear-gradient(
       to bottom,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/main-background.png");
+    url("../images/main-background(phone).png");
   background-position: center;
   background-size: cover;
 
-  @media screen and (max-width: 480px) {
-    width: 100%;
-    max-width: 480px;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 400px;
+
+    background: $brand-color;
+    padding: 118px 204px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/main-background.png");
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background: $brand-color;
+    padding: 200px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/main-background.png");
+    background-position: center;
+    background-size: cover;
   }
 
   &__article {
-    font-size: 44px;
-    line-height: 60px;
-    font-weight: 900;
     color: $white;
-    width: 696px;
-    margin: auto;
-    margin-bottom: 40px;
+    width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
 
-    @media screen and (max-width: 480px) {
-      max-width: 480px;
-      width: 360px;
-      height: 84px;
-      font-size: 26px;
-      line-height: 42px;
-      margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 60px;
+      font-weight: 900;
+      color: $white;
+      width: 696px;
+      margin: auto;
+      margin-bottom: 40px;
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
   }
 

@@ -248,11 +248,7 @@
           <h2 class="section-crew__article">Наша команда</h2>
           <ul class="section-crew__list">
             <li class="section-crew__item">
-              <img
-                src="./images/crew1.jpg"
-                width="270"
-                alt="Игорь Демьяненко"
-              />
+              <img src="./images/crew1.jpg" alt="Игорь Демьяненко" />
               <div class="wrapper">
                 <h3 class="wrapper__article">Игорь Демьяненко</h3>
                 <p class="wrapper__text">Product Designer</p>
@@ -295,7 +291,7 @@
               </div>
             </li>
             <li class="section-crew__item">
-              <img src="./images/crew2.jpg" width="270" alt="Ольга Репина" />
+              <img src="./images/crew2.jpg" alt="Ольга Репина" />
               <div class="wrapper">
                 <h3 class="wrapper__article">Ольга Репина</h3>
                 <p class="wrapper__text">Frontend Developer</p>
@@ -338,7 +334,7 @@
               </div>
             </li>
             <li class="section-crew__item">
-              <img src="./images/crew3.jpg" width="270" alt="Николай Тарасов" />
+              <img src="./images/crew3.jpg" alt="Николай Тарасов" />
               <div class="wrapper">
                 <h3 class="wrapper__article">Николай Тарасов</h3>
                 <p class="wrapper__text">Marketing</p>
@@ -381,7 +377,7 @@
               </div>
             </li>
             <li class="section-crew__item">
-              <img src="./images/crew4.jpg" width="270" alt="Михаил Ермаков" />
+              <img src="./images/crew4.jpg" alt="Михаил Ермаков" />
               <div class="wrapper">
                 <h3 class="wrapper__article">Михаил Ермаков</h3>
                 <p class="wrapper__text">UI Designer</p>
@@ -536,22 +532,23 @@
             </li>
           </ul>
         </div>
-        <div class="join">
-          <h3 class="join__header">Подпишитесь на рассылку</h3>
+        <div class="join-subscribe">
+          <h3 class="join-subscribe__header">Подпишитесь на рассылку</h3>
           <input
-            class="join__input"
+            class="join-subscribe__input"
             type="email"
             name="mail"
             placeholder="E-mail"
           />
-        </div>
-        <div class="join__div">
-          <button class="join__button" type="button">
-            Подписаться
-            <svg width="24px" height="24px">
-              <use href="./images/symbol-defs.svg#icon-telegram_footer"></use>
-            </svg>
-          </button>
+
+          <div class="join-subscribe__div">
+            <button class="join-subscribe__button" type="button">
+              Подписаться
+              <svg width="24px" height="24px" class="join__svg">
+                <use href="./images/symbol-defs.svg#icon-telegram_footer"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>

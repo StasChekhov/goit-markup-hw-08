@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+
   background: rgba(0, 0, 0, 0.2);
 
   &.is-hidden {
@@ -17,10 +18,21 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
+  max-width: 528px;
+  min-width: 320px;
   background-color: $white;
   padding: 40px;
+
+  // @media screen and (max-width: 1200px) {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   min-width: 528px;
+  //   min-height: 581px;
+  //   background-color: $white;
+  //   padding: 40px;
+  // }
 }
 
 .backdrop-modal__button {
@@ -60,10 +72,18 @@
 }
 form {
   position: relative;
-  width: 450px;
+  width: 370px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
+
+  // @media screen and (max-width: 1200px) {
+  //   position: relative;
+  //   width: 450px;
+  //   height: auto;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
 }
 .form-field {
   display: flex;
@@ -147,6 +167,7 @@ textarea {
 
 .conditions {
   margin-bottom: 30px;
+  width: 370px;
 }
 
 .conditions-label {
@@ -154,11 +175,22 @@ textarea {
   align-items: center;
   justify-content: space-around;
 
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
-
   color: $text-color;
+
+  // @media screen and (max-width: 1200px) {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: space-around;
+
+  //   font-size: 14px;
+  //   line-height: 1.71;
+  //   letter-spacing: 0.03em;
+
+  //   color: $text-color;
+  // }
 }
 
 .conditions-link {
@@ -171,7 +203,7 @@ textarea {
     position: absolute;
 
     left: 0;
-    bottom: 5px;
+    bottom: 1px;
     width: 100%;
     height: 1px;
 
