@@ -1,9 +1,9 @@
 .portfolio {
   padding: 60px 0;
 
-  // @media screen and (max-width: 1200px){
-  //   padding: 94px 0;
-  // }
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 
 .portfolio-section {
@@ -14,21 +14,21 @@
   margin-bottom: 40px;
   list-style: none;
 
-  // @media screen and (max-width: 1200px) {
-  //   display: flex;
-  //   justify-content: center;
-  //   margin-right: 10px;
-  //   margin-bottom: 50px;
-  //   list-style: none;
-  // }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    list-style: none;
+  }
 
   &__item:not(:last-child) {
     margin-right: 8px;
     margin-bottom: 15px;
 
-    // @media screen and (max-width: 1200px){
-    //   margin-right: 8px;
-    // }
+    @media screen and (min-width: 1200px) {
+      margin-right: 8px;
+    }
   }
 
   &__button:hover {
@@ -58,13 +58,13 @@
   display: flex;
   flex-wrap: wrap;
 
-  // @media screen and (max-width: 1200px) {
-  //   list-style: none;
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   margin-right: -30px;
-  //   margin-bottom: -30px;
-  // }
+  @media screen and (min-width: 1200px) {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
 
   & li {
     align-items: center;
@@ -74,15 +74,15 @@
     margin-bottom: 30px;
     cursor: pointer;
 
-    // @media screen and (max-width: 1200px) {
-    //   background: $white;
-    //   border: 1px solid $border-portfolio;
-    //   margin-bottom: 30px;
-    //   cursor: pointer;
-    //   flex-basis: calc(100% / 3 - 30px);
-    //   margin-right: 30px;
-    //   margin-bottom: 30px;
-    // }
+    @media screen and (min-width: 1200px) {
+      background: $white;
+      border: 1px solid $border-portfolio;
+      margin-bottom: 30px;
+      cursor: pointer;
+      flex-basis: calc(100% / 3 - 30px);
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
   }
 
   & li:hover {
